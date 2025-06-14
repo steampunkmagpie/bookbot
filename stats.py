@@ -16,4 +16,24 @@ def char_count(book):
                 char[i] +=1
             else:
                 char[i]=1
-    return char
+    return char 
+
+def sorted_list(char):
+    sorted = []
+    for item in char:
+        if item.isalpha() == True:
+            sorted.append({"char": item, "num" :char[item]})
+    def full_sort(sorted):
+        return sorted["num"]
+    sorted.sort(reverse=True, key=full_sort)
+    return sorted
+
+
+
+
+
+
+
+    
+
+    
